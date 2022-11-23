@@ -1,0 +1,7 @@
+* emacs.d
+The best emacs configuration for people that are me.
+This configuration is mainly built around my needs for Java and Competitive programming.
+This will evolve in the future, as I don't plan on using Java for the rest of my life.
+This configuration currently needs some cleanup and installation of magit for version control.
+** License
+[[file:LICENSE][GNU General Public License v3]]
