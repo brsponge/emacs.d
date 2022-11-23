@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: uil
+# key: uil
+# --
+import java.util.Scanner;
+import java.io.File;
+import java.io.FileNotFoundException;
+
+public class `(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))` {
+	public static void main(String[] args) throws FileNotFoundException {
+		Scanner scanner = new Scanner(new File(\"$1\"));
+		$0
+	}
+}
