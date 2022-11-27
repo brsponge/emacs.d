@@ -4,4 +4,4 @@ This configuration is mainly built around my needs for Java and competitive prog
 This will evolve in the future, as I don't plan on using Java for the rest of my life.
 This configuration currently needs some cleanup and installation of magit for version control.
 ** License
-[[file:LICENSE][GNU General Public License v3]]
+[[file:LICENSE][GNU General Public License Version 3]]
