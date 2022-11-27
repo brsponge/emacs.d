@@ -3,5 +3,21 @@ The best emacs configuration for people that are me.
 This configuration is mainly built around my needs for Java and competitive programming.
 This will evolve in the future, as I don't plan on using Java for the rest of my life.
 This configuration currently needs some cleanup and installation of magit for version control.
+** Installation
+#+BEGIN_SRC bash
+  git clone https://github.com/brsponge/emacs.d.git ~/.config/emacs
+  # Initialize emacs config, wait until everything has loaded.
+  emacs
+  # Enable and start emacs daemon
+  systemctl enable --user emacs
+  systemctl start --user emacs
+  # To start the emacs client
+  emacsclient -c -a 'emacs'
+#+END_SRC
+Add this alias to your bashrc (or zshrc) file.
+#+BEGIN_SRC bash
+  alias emacs="emacsclient -c -a 'emacs'"
+#+END_SRC
+and change any shortcuts to use the emacs client instead.
 ** License
 [[file:LICENSE][GNU General Public License Version 3]]
