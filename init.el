@@ -43,9 +43,6 @@
 (add-hook 'java-mode-hook #'tree-sitter-mode)
 (add-hook 'java-mode-hook #'tree-sitter-hl-mode)
 
-(add-hook 'go-mode-hook #'tree-sitter-mode)
-(add-hook 'go-mode-hook #'tree-sitter-hl-mode)
-
 ;; Setup undo-fu
 (use-package undo-fu)
 
@@ -57,18 +54,12 @@
 ;; Setup ivy
 (use-package ivy :config (ivy-mode 1))
 
-;; Setup go
-(use-package go-mode)
-
 ;; Setup smartparens
 (use-package smartparens
   :config
   (require 'smartparens-config)
   (add-hook 'java-mode-hook #'smartparens-mode)
-  (add-hook 'go-mode-hook #'smartparens-mode)
-  (sp-local-pair 'java-mode "{" nil :post-handlers '(("|| " "SPC") ("||\n[i]" "RET")))
-  (sp-local-pair 'go-mode "{" nil :post-handlers '(("|| " "SPC") ("||\n[i]" "RET"))))
-
+  (sp-local-pair 'java-mode "{" nil :post-handlers '(("|| " "SPC") ("||\n[i]" "RET"))))
 ;; Setup general
 (use-package general
   :init
